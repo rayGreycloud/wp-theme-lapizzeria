@@ -1,5 +1,9 @@
 <!-- page.php -->
+<?php
+  get_header();
+ ?>
+    <h1>Hola from page.php</h1>
 
-<h1>
-  This is page.php
-</h1>
+<?php
+  get_footer();
+ ?>
