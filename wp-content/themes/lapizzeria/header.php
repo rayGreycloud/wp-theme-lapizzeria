@@ -16,7 +16,15 @@
           class="logo__image"
           >
         </a>
-      </div>
+      </div><!--.logo -->
+      <div class="header-information">
+        <div class="social-menu">
+          <div class="address">
+            <p>6708 NE Sandy Blvd, Portland, OR 97213</p>
+            <p>Phone: (971) 570-4496</p>
+          </div>
+        </div><!--.social-->
+      </div><!--.header-information-->
     </header>
     <div class="main-menu">
       <div class="navigation">
