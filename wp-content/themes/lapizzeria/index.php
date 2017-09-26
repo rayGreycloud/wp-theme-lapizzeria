@@ -1,5 +1,5 @@
 <?php
 
-echo "Hola";
+echo "Hello from La Pizzeria WordPress Theme";
 
 ?>
