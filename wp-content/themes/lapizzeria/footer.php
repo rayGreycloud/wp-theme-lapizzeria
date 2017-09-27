@@ -1,4 +1,4 @@
 <!-- foot.php -->
-    <h5>footer.................................</h5>
+  <h5>.......this is the footer.......</h5>
 </body>
 </html>
