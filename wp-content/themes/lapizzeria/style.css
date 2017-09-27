@@ -12,6 +12,48 @@
 
 */
 
-h5 {
-  color: slateblue;
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.clear,
+.clear::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.sr-text {
+  display: none;
 }
