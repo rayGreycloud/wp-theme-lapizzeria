@@ -127,6 +127,11 @@ nav.social-menu ul {
   }
 }
 
+nav.social-menu ul li {
+  position: relative;
+  display: inline-block;
+}
+
 nav.social-menu ul li a:before {
   font-family: 'FontAwesome';
   display: inline-block;
