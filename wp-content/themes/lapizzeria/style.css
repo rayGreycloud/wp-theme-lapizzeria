@@ -300,3 +300,53 @@ div.hero::after {
   font-size: 18px;
   line-height: 50px;
 }
+
+/** About Us - Boxes **/
+div.box-information div.single-box {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+
+}
+div.box-information div.single-box img {
+  width: 100%;
+}
+
+@media only screen and (min-width:480px) {
+  div.box-information div.single-box {
+    width: 50%;
+    float: left;
+  }
+  div.box-information div.single-box:last-child {
+    width: 100;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  div.box-information div.single-box,
+  div.box-information div.single-box:last-child {
+    width: 33.3%;
+  }
+}
+
+div.box-information div.single-box:nth-child(1) {
+  background-color: #f19f30;
+}
+
+div.box-information div.single-box:nth-child(2) {
+  background-color: #127427;
+}
+
+div.box-information div.single-box:nth-child(3) {
+  background-color: #a61206;
+}
+
+div.box-information div.single-box h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+div.single-box div.content-box {
+  padding: 10px;
+}
