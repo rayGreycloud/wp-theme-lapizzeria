@@ -310,6 +310,7 @@ div.box-information div.single-box {
 }
 div.box-information div.single-box img {
   width: 100%;
+  display: block;
 }
 
 @media only screen and (min-width:480px) {
@@ -318,7 +319,7 @@ div.box-information div.single-box img {
     float: left;
   }
   div.box-information div.single-box:last-child {
-    width: 100;
+    width: 100%;
   }
 }
 
@@ -345,8 +346,15 @@ div.box-information div.single-box h3 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
+  margin-top: 0;
+}
+
+div.box-information div.single-box p {
+  margin-bottom: 0;
 }
 
 div.single-box div.content-box {
   padding: 10px;
+  vertical-align: middle;
+  display: table-cell;
 }
