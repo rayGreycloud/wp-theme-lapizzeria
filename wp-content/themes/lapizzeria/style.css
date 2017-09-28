@@ -11,7 +11,7 @@
   Text Domain: lapizzeria
 
 */
-
+/* --->>> Global <<<-------------------------*/
 html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -72,7 +72,7 @@ h4 {
   text-align: center;
 }
 
-/**Header**/
+/* --->>> Header <<<-------------------------*/
 header.site-header {
   border-bottom: 1px solid #c1c1c1;
   padding-bottom: 30px;
@@ -128,7 +128,7 @@ div.address p {
   }
 }
 
-/** Social Menu **/
+/* --->>> Social Menu <<<-------------------------*/
 nav.social-menu ul {
   list-style: none;
   text-align: center;
@@ -177,7 +177,7 @@ nav.social-menu li a[href*="instagram.com"]::before {
   content: '\f16d';
 }
 
-/** Main Menu **/
+/* --->>> Main Menu <<<-------------------------*/
 nav.site-nav {
   display: none;
 }
@@ -218,7 +218,7 @@ nav.site-nav ul li.current_page_item a {
   border-bottom: 8px solid #a61206;
 }
 
-/** Responsive Menu Button **/
+/* --->>> Responsive Menu Button <<<---------------------*/
 @media only screen and (max-width: 767px) {
   .mobile-menu a {
     height: 40px;
@@ -241,7 +241,7 @@ nav.site-nav ul li.current_page_item a {
   }
 }
 
-/** Hero Image **/
+/* --->>> Hero Image <<<-------------------------*/
 div.hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,7 +301,7 @@ div.hero::after {
   line-height: 50px;
 }
 
-/** About Us - Boxes **/
+/* --->>> About Us - Boxes <<<-------------------------*/
 div.box-information div.single-box {
   text-align: center;
   width: 100%;
@@ -359,7 +359,7 @@ div.single-box div.content-box {
   display: table-cell;
 }
 
-/** Footer **/
+/* --->>> Footer <<<-----------------------------*/
 footer {
   margin-top: 30px;
   padding: 30px 0;
