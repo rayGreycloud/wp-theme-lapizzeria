@@ -1,5 +1,22 @@
-<!-- foot.php -->
-<?php wp_footer(); ?>
-  <h5>.......this is the footer.......</h5>
-</body>
+    <footer>
+    <?php
+      $args = array(
+        'theme_location' => 'header-menu',
+        'container' => 'nav',
+        'after' => '<span class="separator"> | </span>'
+      );
+      wp_nav_menu($args);
+    ?>
+
+      <div class="location">
+        <p>6708 NE Sandy Blvd, Portland, OR 97213</p>
+        <p>Phone:  (971) 570-4496</p>
+      </div>
+
+      <p class="copyright">All rights reserved <?php echo date('Y')?></p>
+    </footer>
+
+  <?php wp_footer(); ?>
+
+  </body>
 </html>
