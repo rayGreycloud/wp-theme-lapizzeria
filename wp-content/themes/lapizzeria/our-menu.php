@@ -1,7 +1,9 @@
+<?php
 /*
 * Template Name: Our Specialities
 */
-<?php get_header(); ?>
+
+get_header(); ?>
 
 <?php while(have_posts()): the_post(); ?>
 <div class="hero" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>)">
@@ -35,10 +37,10 @@
     $pizzas = new WP_Query($args);
     while($pizzas->have_posts()) : $pizzas->the_post(); ?>
 
-    <div class="columns2-4">
+    <div class="columns2-4 specialty-content">
       <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail('specialties'); ?>
-        <h4><?php the_title(); ?><span>$<?php the_field('price'); ?></span></h4>
+        <h4><?php the_title(); ?><span>$ <?php the_field('price'); ?></span></h4>
         <?php the_content(); ?>
       </a>
     </div>
@@ -60,7 +62,7 @@
     $pizzas = new WP_Query($args);
     while($pizzas->have_posts()) : $pizzas->the_post(); ?>
 
-    <div class="columns2-4">
+    <div class="columns2-4 specialty-content">
       <a href="<?php the_permalink(); ?>">
         <?php the_post_thumbnail('specialties'); ?>
         <h4><?php the_title(); ?><span>$<?php the_field('price'); ?></span></h4>
