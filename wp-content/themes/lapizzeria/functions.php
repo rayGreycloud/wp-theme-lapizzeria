@@ -37,7 +37,7 @@ function lapizzeria_menus() {
 
 add_action('init', 'lapizzeria_menus');
 
-function lapizzeria_specialities() {
+function lapizzeria_specialties() {
   $labels = array(
     'name'                => _x('Pizzas', 'lapizzeria'),
     'singular_name'       => _x('Pizzas', 'post type singular name','lapizzeria'),
@@ -63,7 +63,7 @@ function lapizzeria_specialities() {
     'show_ui'            => true,
     'show_in_menu'       => true,
     'query_var'          => true,
-    'rewrite'            => array('slug' => 'specialities'),
+    'rewrite'            => array('slug' => 'specialties'),
     'capability_type'    => 'post',
     'has_archive'        => true,
     'hierarchical'       => false,
@@ -72,10 +72,10 @@ function lapizzeria_specialities() {
     'taxonomies'         => array('category'),
   );
 
-  register_post_type('specialities', $args);
+  register_post_type('specialties', $args);
 }
 
-add_action('init', 'lapizzeria_specialities');
+add_action('init', 'lapizzeria_specialties');
 
 
  ?>
