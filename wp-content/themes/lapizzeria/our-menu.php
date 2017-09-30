@@ -15,7 +15,7 @@ get_header(); ?>
 </div>
 
 <div class="main-content container">
-  <main class="text-center content-text">
+  <main class="text-center content-text our-specialties-heading">
     <?php the_content(); ?>
   </main>
 </div>
