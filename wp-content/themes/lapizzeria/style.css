@@ -16,116 +16,113 @@ html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
 body {
   margin: 0;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 :root {
   font-size: 16px;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
 }
-
 h1 {
   font-size: 3rem;
 }
-
 h2 {
   font-size: 2.5rem;
 }
-
 h3 {
   font-size: 1.75rem;
 }
-
 h4 {
   font-size: 1.5rem;
 }
-
+.button {
+  background-color: #a61206;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  width: auto;
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px 80px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
 .clear,
 .clear::after {
   content: '';
   clear: both;
   display: block;
 }
-
 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 
 }
-
+.primary {
+  background-color: #a61206;
+  transition: background-color .5s ease;
+}
+.primary:hover {
+  background-color: #7b0d04
+}
 .primary-text {
   color: #a61206;
 }
-
 .sr-text {
   display: none;
 }
-
 .text-center {
   text-align: center;
 }
-
 /* --->>> Header <<<-------------------------*/
 header.site-header {
   border-bottom: 1px solid #c1c1c1;
   padding-bottom: 30px;
 }
-
 div.logo {
   text-align: center;
 }
-
 @media only screen and (min-width: 768px) {
   div.logo {
     text-align: left;
   }
 }
-
 @media only screen and (min-width: 992px) {
   div.logo {
     text-align: center;
   }
 }
-
 img.logo-image {
   width: 250px;
 }
-
 @media only screen and (min-width: 768px) {
   header.site-header .container {
     position: relative;
   }
-
   header.site-header .header-information {
     position: absolute;
     top: 0;
     right: 0;
   }
 }
-
 div.address {
   display: block;
   clear: both;
   padding-top: 10px;
 }
-
 div.address p {
   margin: 0;
   font-size: 14px;
   text-align: center;
 }
-
 @media only screen and (min-width: 768px) {
   div.address p {
     text-align: right;
@@ -138,18 +135,15 @@ nav.social-menu ul {
   text-align: center;
   padding: 0;
 }
-
 @media only screen and (min-width: 768px) {
   nav.social-menu ul {
     float: right;
   }
 }
-
 nav.social-menu ul li {
   position: relative;
   display: inline-block;
 }
-
 nav.social-menu ul li a:before {
   font-family: 'FontAwesome';
   display: inline-block;
@@ -160,23 +154,18 @@ nav.social-menu ul li a:before {
   color: #000000;
   -webkit-font-smoothing: antialiazed;
 }
-
 nav.social-menu li a[href*="facebook.com"]::before {
   content: '\f09a';
 }
-
 nav.social-menu li a[href*="twitter.com"]::before {
   content: '\f099';
 }
-
 nav.social-menu li a[href*="pinterest.com"]::before {
   content: '\f231';
 }
-
 nav.social-menu li a[href*="youtube.com"]::before {
   content: '\f16a';
 }
-
 nav.social-menu li a[href*="instagram.com"]::before {
   content: '\f16d';
 }
@@ -185,13 +174,11 @@ nav.social-menu li a[href*="instagram.com"]::before {
 nav.site-nav {
   display: none;
 }
-
 @media only screen and (min-width: 768px) {
   nav.site-nav {
     display: block;
   }
 }
-
 nav.site-nav ul {
   list-style: none;
   margin: 0;
@@ -199,14 +186,12 @@ nav.site-nav ul {
   width: 100%;
   display: table;
 }
-
 @media only screen and (min-width: 768px) {
   nav.site-nav ul li {
     display: table-cell;
     width: 1%;
   }
 }
-
 nav.site-nav ul li a {
   text-align: center;
   padding: 20px 0;
@@ -217,12 +202,10 @@ nav.site-nav ul li a {
   color: #000000;
   font-family: 'Raleway', sans-serif;
 }
-
 nav.site-nav ul li.current_page_item a,
 .single-specialties nav.site-nav ul li.menu-item-27 a {
   border-bottom: 8px solid #a61206;
 }
-
 /* --->>> Responsive Menu Button <<<---------------------*/
 @media only screen and (max-width: 767px) {
   .mobile-menu a {
@@ -311,13 +294,11 @@ div.box-information div.single-box {
   text-align: center;
   width: 100%;
   color: #fff;
-
 }
 div.box-information div.single-box img {
   width: 100%;
   display: block;
 }
-
 @media only screen and (min-width:480px) {
   div.box-information div.single-box {
     width: 50%;
@@ -327,43 +308,35 @@ div.box-information div.single-box img {
     width: 100%;
   }
 }
-
 @media only screen and (min-width:768px) {
   div.box-information div.single-box,
   div.box-information div.single-box:last-child {
     width: 33.3%;
   }
 }
-
 div.box-information div.single-box:nth-child(1) {
   background-color: #f19f30;
 }
-
 div.box-information div.single-box:nth-child(2) {
   background-color: #127427;
 }
-
 div.box-information div.single-box:nth-child(3) {
   background-color: #a61206;
 }
-
 div.box-information div.single-box h3 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
   margin-top: 0;
 }
-
 div.box-information div.single-box p {
   margin-bottom: 0;
 }
-
 div.single-box div.content-box {
   padding: 10px;
   vertical-align: middle;
   display: table-cell;
 }
-
 /* --->>> Footer <<<-----------------------------*/
 footer {
   margin-top: 30px;
@@ -371,19 +344,15 @@ footer {
   border-top: 1px solid #c1c1c1;
   text-align: center;
 }
-
 footer nav ul {
   list-style: none;
 }
-
 footer nav ul li {
   display: inline;
 }
-
 footer nav ul li:last-child span.separator {
   display: none;
 }
-
 footer nav ul li a {
   color: #000;
   text-transform: uppercase;
@@ -391,26 +360,21 @@ footer nav ul li a {
   font-size: 16px;
   text-decoration: none;
 }
-
 footer .location {
   margin-top: 30px;
 }
-
 footer p {
   margin: 0 0 5px 0;
   font-size: 14px;
 }
-
 footer p.copyright {
   margin-top: 20px;
 }
-
 /* --->>> Grid <<<-----------------------------*/
 img {
   max-width: 100%;
   height: auto;
 }
-
 @media only screen and (min-width:768px) {
   .container-grid {
     margin-left: 10px;
@@ -446,7 +410,6 @@ img {
 .our-specialties {
   padding: 0 60px;
 }
-
 .specialty-content {
   padding: 20px;
 }
@@ -471,7 +434,6 @@ img {
   color: #3d3d3d;
   line-height: 30px;
 }
-
 /* --->>> Single Specialty <<<---------------------------*/
 .single-specialties p.ingredients,
 .single-specialties p.price {
@@ -482,4 +444,54 @@ img {
 .single-specialties p.price span {
   color: #000;
   font-size: 20px;
+}
+/* --->>> Blog <<<---------------------------*/
+article.entry {
+  margin-top: 30px;
+}
+header.entry-header {
+  margin-top: 20px;
+}
+header.entry-header .date {
+  background-color: #f19f30;
+  float: left;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+header.entry-header .date time {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+header.entry-header .date time span {
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+}
+header.entry-header .entry-title {
+  float: right;
+  width: calc(100% - 90px);
+}
+header.entry-header h2 {
+  margin: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header.entry-header p.author{
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+p.author i {
+  font-size: 30px;
+  color: #f19f30;
+}
+div.entry-content p {
+  margin-bottom: 0;
+  line-height: 24px;
 }
