@@ -10,7 +10,7 @@ $(document).ready(function() {
   var breakpoint = 768;
   $(window).resize(function() {
     boxAdjustment();
-    
+
     if ($(document).width() >= breakpoint) {
       $('nav.site-nav').show();
     } else {
@@ -20,6 +20,13 @@ $(document).ready(function() {
 
   boxAdjustment();
 
+  jQuery('.gallery a').each(function() {
+    jQuery(this).attr({'data-fluidbox': ''});
+  });
+
+  if (jQuery(['data-fluidbox']).length > 0) {
+    jQuery('[data-fluidbox]').fluidbox();
+  }
 });
 
 // Adapt the image height to div
