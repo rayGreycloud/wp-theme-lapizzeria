@@ -585,6 +585,7 @@ form.searchform #s {
 .comment-respond form textarea {
   padding: 10px;
   width: calc(100% - 220px);
+  font-size: 18px;
 }
 .comment-respond form input[type="submit"] {
   margin: 0 auto;
