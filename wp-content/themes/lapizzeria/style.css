@@ -204,7 +204,8 @@ nav.site-nav ul li a {
   font-family: 'Raleway', sans-serif;
 }
 nav.site-nav ul li.current_page_item a,
-.single-specialties nav.site-nav ul li.menu-item-27 a {
+.single-specialties nav.site-nav ul li.menu-item-27 a,
+nav.site-nav ul li.current_page_parent a {
   border-bottom: 8px solid #a61206;
 }
 /* --->>> Responsive Menu Button <<<---------------------*/
