@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
   boxAdjustment();
-
+  // Fluidbox
   jQuery('.gallery a').each(function() {
     jQuery(this).attr({'data-fluidbox': ''});
   });

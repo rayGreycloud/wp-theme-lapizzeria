@@ -291,7 +291,7 @@ div.hero::after {
   line-height: 50px;
 }
 
-/* --->>> About Us - Boxes <<<-------------------------*/
+/* --->>> About Us - Boxes <<<---------------------*/
 div.box-information div.single-box {
   text-align: center;
   width: 100%;
@@ -637,4 +637,18 @@ li.comment ul.children {
 li.comment ul.children li {
   background-color: #fff;
   margin-top: 20px;
+}
+/* --->>> Gallery <<<-----------------------------*/
+div#gallery-1 .gallery-item {
+  width: 50% !important;
+  margin: 0;
+  padding: 5px 5px !important;
+}
+@media only screen and (min-width:768px) {
+  div#gallery-1 .gallery-item {
+    width: 25% !important;
+  }
+}
+div#gallery-1 img {
+  border: none;
 }
