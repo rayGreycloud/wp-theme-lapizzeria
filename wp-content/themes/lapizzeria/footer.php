@@ -10,7 +10,7 @@
 
       <div class="location">
         <p>6708 NE Sandy Blvd, Portland, OR 97213</p>
-        <p>Phone:  (971) 570-4496</p>
+        <p>Phone:  (971) 555-1234</p>
       </div>
 
       <p class="copyright">All rights reserved <?php echo date('Y')?></p>
