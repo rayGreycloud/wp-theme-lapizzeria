@@ -4,11 +4,11 @@ function lapizzeria_save_reservation() {
   global $wpdb;
 
   if (isset($_POST['reservation']) && $_POST['hidden'] == "1") {
-    $name = $_POST['name'];
-    $date = $_POST['date'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
+    $name = sanitize_text_field( $_POST['name'] );
+    $date = sanitize_text_field($_POST['date']);
+    $email = sanitize_email($_POST['email']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $message = sanitize_text_field($_POST['message']);
 
     $table = $wpdb->prefix . 'reservations';
 
@@ -29,6 +29,10 @@ function lapizzeria_save_reservation() {
     );
 
     $wpdb->insert($table, $data, $format);
+
+    $url = get_page_by_title('Thank you for your reservation!');
+    wp_redirect(get_permalink($url));
+    exit;
   }
 }
 
