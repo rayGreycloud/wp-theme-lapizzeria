@@ -1,7 +1,11 @@
 <?php
 
+// Link the database
 require get_template_directory() . '/inc/database.php';
+// Handle reservation submission
 require get_template_directory() . '/inc/reservations.php';
+// Creates option pages for theme
+require get_template_directory() . '/inc/options.php';
 
 function lapizzeria_setup() {
   add_theme_support('post-thumbnails');
