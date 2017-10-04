@@ -33,9 +33,9 @@ get_header(); ?>
           <input type="tel" name="phone" placeholder="Phone Number" required>
         </div>
         <div class="field">
-          <textarea name="messgae" placeholder="Message" required></textarea>
+          <textarea name="message" placeholder="Message" required></textarea>
         </div>
-        <input type="submit" name="submit" class="button" value="Send">
+        <input type="submit" name="reservation" class="button" value="Send">
         <input type="hidden" name="hidden" value=1>
       </form>
     </div>

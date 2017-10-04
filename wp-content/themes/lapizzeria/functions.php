@@ -1,6 +1,7 @@
 <?php
 
 require get_template_directory() . '/inc/database.php';
+require get_template_directory() . '/inc/reservations.php';
 
 function lapizzeria_setup() {
   add_theme_support('post-thumbnails');
