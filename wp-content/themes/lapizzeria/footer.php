@@ -13,7 +13,7 @@
         <p>Phone:  (971) 555-1234</p>
       </div>
 
-      <p class="copyright">All rights reserved <?php echo date('Y')?></p>
+      <p class="copyright">All rights reserved La Pizzeria <?php echo date('Y')?></p>
     </footer>
 
   <?php wp_footer(); ?>
