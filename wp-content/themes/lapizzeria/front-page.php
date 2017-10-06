@@ -12,6 +12,8 @@
   </div>
 </div>
 
+<?php endwhile; ?>
+
 <div class="main-content container">
   <main class="container-grid clear">
     <h2 class="primary-text text-center">Our Specialties</h2>
@@ -37,14 +39,27 @@
       </div>
     </div>
 
-
     <?php endwhile; wp_reset_postdata();
      ?>
-
 
   </main>
 </div>
 
-<?php endwhile; ?>
+<section class="ingredients">
+  <div class="container">
+    <div class="container-grid">
+      <?php while(have_posts()): the_post(); ?>
+        <div class="columns2-4">
+          <h3><?php the_field('ingredients_title'); ?></h3>
+          <?php the_field('ingredients_text'); ?>
+        </div>
+        <div class="columns2-4">
+          <img src="<?php the_field('ingredients_image'); ?>" alt="Fresh Ingredients">
+        </div>
+
+      <?php endwhile; ?>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>
