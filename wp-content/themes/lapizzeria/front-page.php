@@ -55,7 +55,7 @@
           <?php $url = get_page_by_title('About Us'); ?>
           <a class="button secondary" href="<?php echo get_permalink($url->ID); ?>">read more</a>
         </div>
-        <div class="columns2-4">
+        <div class="columns2-4 image">
           <img src="<?php the_field('ingredients_image'); ?>" alt="Fresh Ingredients">
         </div>
 
