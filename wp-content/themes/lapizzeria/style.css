@@ -859,3 +859,6 @@ section.location-reservation {
 .home form.reservation-form ::-ms-input-placeholder {
   color: #fff !important;
 }
+#map {
+  height: 400px;
+}
