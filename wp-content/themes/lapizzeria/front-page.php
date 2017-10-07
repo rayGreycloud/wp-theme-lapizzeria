@@ -72,11 +72,11 @@
    ?>
 </section>
 
-<section class="location-reservation clear">
+<section class="container location-reservation clear">
   <div class="container-grid">
     <div class="columns2-4">
       <div class="" id="map">
-
+        map here
       </div>
     </div>
     <div class="columns2-4">

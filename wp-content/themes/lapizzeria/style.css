@@ -667,7 +667,7 @@ div#gallery-1 img {
 }
 @media only screen and (min-width: 768px) {
   div.reservation-info {
-    margin-left: 50% !important;
+    margin-left: 50%;
   }
 }
 form.reservation-form h2 {
@@ -817,4 +817,45 @@ section.ingredients .image {
 }
 section.ingredients .image img {
   width: 80%;
+}
+section.location-reservation {
+  background-image: url(img/bg_ingredients.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 50px;
+  padding: 50px 0;
+}
+.home .reservation-info {
+  margin: 0;
+  color: #fff;
+  padding-right: 30px;
+}
+.home .reservation-form h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+}
+.home .reservation-form input,
+.home .reservation-form textarea {
+  background-color: transparent;
+  border: 4px solid #fff !important;
+  color: #fff;
+}
+.home .reservation-form input[type='submit'] {
+  background-color: #a61206;
+  border: none !important;
+}
+.home form.reservation-form ::-webkit-input-placeholder {
+  color: #fff !important;
+}
+.home form.reservation-form :moz-placeholder {
+  color: #fff !important;
+}
+.home form.reservation-form ::moz-placeholder {
+  color: #fff !important;
+}
+.home form.reservation-form ::-ms-input-placeholder {
+  color: #fff !important;
 }
