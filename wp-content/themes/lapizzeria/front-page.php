@@ -74,7 +74,7 @@
 
 <section class="container location-reservation clear">
   <div class="container-grid">
-    <div class="columns2-4">
+    <div class="columns2-4 map-section">
       <div id="map">
       </div>
     </div>

@@ -38,6 +38,25 @@ $(document).ready(function() {
   }
 });
 
+  // Adjust Map height
+  var map = $('#map');
+  var breakpoint = 768;
+  if (map.length > 0) {
+    if ($(document).width() >= breakpoint) {
+      displayMap(0);
+    } else {
+      displayMap(300);
+    }
+  }
+  $(window).resize(function() {
+    if ($(document).width() >= breakpoint) {
+      displayMap(0);
+    } else {
+      displayMap(300);
+    }
+  });
+
+
 // Adapt the image height to div
 function boxAdjustment() {
   var images = $('.box-image');
@@ -47,5 +66,15 @@ function boxAdjustment() {
     $(boxes).each(function (i, element) {
       $(element).css({'height': imageHeight + 'px'});
     });
+  }
+}
+
+function displayMap(value) {
+  if (value == 0) {
+    var locationSection = $('.location-reservation');
+    var locationHeight = locationSection.height();
+    $('#map').css({'height': locationHeight});
+  } else {
+    $('#map').css({'height': value});
   }
 }
