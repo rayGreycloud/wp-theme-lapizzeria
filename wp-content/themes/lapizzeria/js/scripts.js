@@ -1,9 +1,21 @@
 
 var map;
 function initMap() {
+
+  var latLng = {
+    lat: 45.546270,
+    lng: -122.594192
+  };
+
   map = new google.maps.Map(document.getElementById('map'), {
-    center: { lat: 45.546360, lng: -122.593849},
-    zoom: 15
+    center: latLng,
+    zoom: 16
+  });
+
+  var marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+    title: 'La Pizzeria'
   });
 }
 
