@@ -32,8 +32,8 @@
             wp_nav_menu($args);
              ?>
             <div class="address">
-              <p>6708 NE Sandy Blvd, Portland, OR 97213</p>
-              <p>Phone: (971) 570-4496</p>
+              <p><?php echo esc_html(get_option('lapizzeria_location')); ?></p>
+              <p>Phone: <?php echo esc_html(get_option('lapizzeria_phone')); ?></p>
             </div>
           </div><!--.social-->
         </div><!--.header-information-->

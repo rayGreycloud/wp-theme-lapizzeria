@@ -9,8 +9,8 @@
     ?>
 
       <div class="location">
-        <p>6708 NE Sandy Blvd, Portland, OR 97213</p>
-        <p>Phone:  (971) 555-1234</p>
+        <p><?php echo esc_html(get_option('lapizzeria_location')); ?></p>
+        <p>Phone: <?php echo esc_html(get_option('lapizzeria_phone')); ?></p>
       </div>
 
       <p class="copyright">All rights reserved La Pizzeria <?php echo date('Y')?></p>
