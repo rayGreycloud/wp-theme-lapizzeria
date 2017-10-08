@@ -3,13 +3,13 @@ var map;
 function initMap() {
 
   var latLng = {
-    lat: 45.546270,
-    lng: -122.594192
+    lat: parseFloat(options.latitude),
+    lng: parseFloat(options.longitude)
   };
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: latLng,
-    zoom: 16
+    zoom: parseInt(options.zoom)
   });
 
   var marker = new google.maps.Marker({
